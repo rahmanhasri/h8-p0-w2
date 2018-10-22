@@ -1,0 +1,104 @@
+1. Newton Second Law
+
+Bunyi hukum II Newton adalah:
+
+Percepatan sebuah benda akan sebanding dengan gaya yang diberikan pada benda dan berbanding terbalik dengan massa benda.
+Arah percepatan benda sama dengan arah gaya total yang diberikan pada benda.
+
+Secara matematis hukum II Newton dirumuskan sebagai berikut: ΣF = m x a
+
+ΣF = resultan gaya (Newton)
+
+m = massa benda (kg)
+
+a = percepatan benda (m/s2)
+
+~~~~~~~~~~~~
+
+STORE 'massa' to = 60
+STORE 'percepatan' to = 2
+CALCULATE 'massa' times 'percepatan'
+SET 'resultan' value with calculation result
+DISPLAY 'resultan'
+
+2. Tahun Kabisat
+
+Apa yang kamu ketahui tentang tanggal 29 Februari? Kamu pasti tahu jika suatu tahun memiliki tanggal 29 Februari berarti tahun tersebut
+merupakan tahun kabisat.
+
+Dalam kalender Gregorian, tahun kabisat memiliki beberapa kriteria yaitu antara lain:
+
+    Jika tahun habis di bagi 4 dan tidak habis di bagi 100, dan
+    Jika tahun habis di bagi 4, habis di bagi 100 dan habis di bagi 400
+
+~~~~~~~~~~~~~ALGORITMA~~~~~~~~~
+
+Masukkan 'n' angka tahun
+Jika 'n' % 4 sama dengan 0
+  jika 'n' % 100 tidak sama dengan 0
+    Maka 'n' adalah "TAHUN KABISAT"
+  jika 'n' % 400 sama dengan 0
+    Maka 'n' adalah "TAHUN KABISAT"
+Jika bukan, 'n' adalah "TAHUN NORMAL"
+~~~~~~~~~~~~~PSEUDO~~~~~~~~~~~~
+
+STORE 'tahun' with any value;
+IF 'tahun' % 4 equals to 0
+  IF 'tahun' % 100 not equals to 0
+    DISPLAY "TAHUN KABISAT"
+  ELSE IF 'tahun' % 400 equals to 0
+    DISPLAY "TAHUN KABISAT"
+  ELSE DISPLAY "TAHUN NORMAL"
+ELSE DISPLAY " TAHUN NORMAL"
+
+~~~~~~~~~~~~~~
+
+3. Laundry Day
+
+Foxie akan mencuci pakaiannya menggunakan mesin cuci. Pakaian yang akan dicuci oleh Foxie sebanyak 20 dan akan dimasukkan ke mesin cuci. Mesin cuci akan dinyalakan jika semua pakaian Foxie sudah masuk ke mesin cuci.
+
+Bantulah Foxie untuk menghitung jumlah pakaian yang akan dimasukkan ke mesin cuci menggunakan algoritma & pseudocode perulangan!
+
+
+~~~ALGORITMA~~~~~
+
+1.Siapkan 20 'pakaian' yang akan dicuci
+2.Lalu siapkan 'mesin cuci' kalo tidak punya lanjut no. 99
+3.Jika 'mesin cuci' < 20
+    Masukkan 'pakaian' hingga berisi 20
+4.Nyalakan "MESIN CUCI" (SELESAI)
+99.Kalo tidak punya ya beli (Kembali no.2)
+
+~~~PSEUDOCODE~~~~
+
+STORE 'Pakaian' to 20
+STORE 'mesinCuci' to 0
+WHILE 'mesinCuci' < 'Pakaian'
+  ADD 'mesinCuci' by 1
+DO "MESIN CUCI ON"
+
+4. Periksa Kuku
+
+Seorang guru akan memeriksa kuku siswa-siswinya yang sebanyak 40 orang dengan cara berkeliling kelas. Jika guru menemukan siswa/siswi yang memiliki kuku yang panjang maka guru akan menghukum siswa/siswi tersebut, jika tidak guru akan memuji siswa/siswi tersebut.
+
+Buatlah algoritma & pseudocode untuk permasalahan diatas.
+
+~~~~~~~~ALGORITMA~~~~~~~~
+
+1.Guru menyiapkan 'penggaris besi'
+2.Guru berkeliling 1 kelas, mengecek satu persatu 'murid'
+3.Cek 'murid' hingga 40
+4.Jika 'murid' kukunya panjang, gunakan 'penggaris besi'
+5.Jika 'murid' kukunya pendek, bilang "kamu ganteng/cantik"
+6.Cek 'murid' sudah 40, SELESAI
+
+~~~~~~~~PSEUDOCODE~~~~~~~~~~~
+
+STORE 'murid' to 40
+STORE 'hitung' to 0
+WHILE 'hitung' < 'murid'
+  DO "CEK KUKU"
+  IF 'kukumurid' = "panjang"
+    DO "HUKUM"
+  ELSE 'kuku' DO "PUJI"
+  ADD 'hitung' by 1
