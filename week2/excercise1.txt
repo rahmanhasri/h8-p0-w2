@@ -13,7 +13,7 @@ m = massa benda (kg)
 
 a = percepatan benda (m/s2)
 
-~~~~~~~~~~~~
+~~~~~~ALGORITMA~~~~~~~~
 
 STORE 'massa' to = 60
 STORE 'percepatan' to = 2
