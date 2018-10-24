@@ -1,49 +1,48 @@
 var tanggal = 25; // assign nilai variabel tanggal disini! (dengan angka antara 1 - 31)
-var bulan = 2; // assign nilai variabel bulan disini! (dengan angka antara 1 - 12)
+var bulan = 12; // assign nilai variabel bulan disini! (dengan angka antara 1 - 12)
 var tahun = 2119; // assign nilai variabel tahun disini! (dengan angka antara 1900 - 2200)
 
-if (tanggal > 31 || tahun < 1900 || tahun > 2200) {
+if (tanggal > 31 || tahun < 1900 || tahun > 2200 || bulan < 1 || bulan > 12 ) {
   console.log('invalid date');
 } else {
   switch (bulan) {
     case 1:
-      console.log(`${tanggal} Januari ${tahun}`)
+      bulan = 'Januari'
       break;
     case 2:
-      console.log(`${tanggal} Februari ${tahun}`)
+      bulan = 'Februari'
       break;
     case 3:
-      console.log(`${tanggal} Maret ${tahun}`)
+      bulan = 'Maret'
       break;
     case 4:
-      console.log(`${tanggal} April ${tahun}`)
+      bulan = 'April'
       break;
     case 5:
-      console.log(`${tanggal} Mei ${tahun}`)
+      bulan = 'Mei'
       break;
     case 6:
-      console.log(`${tanggal} Juni ${tahun}`)
+      bulan = 'Juni'
       break;
     case 7:
-      console.log(`${tanggal} Juli ${tahun}`)
+      bulan = 'Juli'
       break;
     case 8:
-      console.log(`${tanggal} Agustus ${tahun}`)
+      bulan = 'Agustus'
       break;
     case 9:
-      console.log(`${tanggal} September ${tahun}`)
+      bulan = 'September'
       break;
     case 10:
-      console.log(`${tanggal} Oktober ${tahun}`)
+      bulan = 'Oktober'
       break;
     case 11:
-      console.log(`${tanggal} November ${tahun}`)
+      bulan = 'November'
       break;
     case 12:
-      console.log(`${tanggal} Desember ${tahun}`)
-      break;
-    default:
-      console.log('invalid date');
+      bulan = 'Desember'
       break;
   }
+  console.log(`${tanggal} ${bulan} ${tahun}`)
 }
+
