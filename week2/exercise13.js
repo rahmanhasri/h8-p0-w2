@@ -9,9 +9,7 @@ function xo(str) {
       o += 1
     }
   }
-  if (x == o) {
-    return true
-  } else return false
+  return x === o
 }
 
 // TEST CASES

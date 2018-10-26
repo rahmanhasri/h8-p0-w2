@@ -1,11 +1,11 @@
 function konversiMenit(menit) {
   // you can only write your code here!
-  var detik = menit % 60;
-  var menits = Math.floor(menit / 60);
-  if (detik < 10) {
-    detik = '0' + detik;
+  var menits = menit % 60;
+  var jam = Math.floor(menit / 60);
+  if (menits < 10) {
+    menits = '0' + menits;
   } else {}
-  return menits + ':' + detik
+  return jam + ':' + menits
 }
 
 // TEST CASES
