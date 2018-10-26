@@ -45,4 +45,3 @@ if (tanggal > 31 || tahun < 1900 || tahun > 2200 || bulan < 1 || bulan > 12 ) {
   }
   console.log(`${tanggal} ${bulan} ${tahun}`)
 }
-

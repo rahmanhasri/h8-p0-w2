@@ -1,15 +1,15 @@
 // SEGITIGA ALIGN KANAN
-var count = 5;
-var bintang ='';
-for(i=count ; i>0 ; i--){
-  bintang = '';
-  for(j=0 ; j<count ; j++){
-    if (j<i-1) {
-        bintang += ' '
-    } else bintang += '*'
-  }
-  console.log(bintang)
-}
+// var count = 5;
+// var bintang ='';
+// for(i=count ; i>0 ; i--){
+//   bintang = '';
+//   for(j=0 ; j<count ; j++){
+//     if (j<i-1) {
+//         bintang += ' '
+//     } else bintang += '*'
+//   }
+//   console.log(bintang)
+// }
 
 // SEGITIGA SAMA KAKI
 // var tinggi = 5;
@@ -26,18 +26,32 @@ for(i=count ; i>0 ; i--){
 //   console.log(bintang)
 // }
 
-
-// var tinggi = 9;
-// var lebar = 9;
-// var tengah = Math.ceil(tinggi/2);
+// Segitiga Kebalik
+// var n = 5;
+// var lebar = 2*n-1;
 // var bintang ='';
 //
-// for (i=tinggi; i > 0; i--){
+// for(i=0 ; i<n ; i++){
 //   bintang = '';
-//   for (j=0; j<lebar; j++){
-//     if (j<tengah || j>lebar-i){
+//   for(j=lebar ; j>0 ; j--){
+//     if (j<i+1 || j>lebar-i) {
 //       bintang += ' '
 //     } else bintang += '*'
 //   }
-//   console.log(bintang);
+//   console.log(bintang)
 // }
+
+var n = 5*2;
+var mid = 5;
+var lebar = n-1;
+var bintang ='';
+
+for(i=0 ; i<n ; i++){
+  bintang = '';
+  for(j=lebar ; j>0 ; j--){
+    if (j>i+mid /*|| j<i-n/2+1*/|| j<i-mid+1 || i<mid-j || i>lebar-j+mid) {
+        bintang += ' '
+    } else bintang += '*'
+  }
+  console.log(bintang)
+}

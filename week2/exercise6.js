@@ -20,7 +20,7 @@ while (j > 0) {
   j -= 2;
 }
 
-
+console.log();
 // NOMER 2
 for (i = 0; i <= 20; i++) {
   if (i === 0) {
@@ -38,7 +38,7 @@ for (j=20; j > 0 ; j--) {
   }
 }
 
-
+console.log();
 // NOMER 3
 for (i=1 ; i<=100 ; i++) {
   if (i % 2 == 0) {

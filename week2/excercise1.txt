@@ -15,8 +15,8 @@ a = percepatan benda (m/s2)
 
 ~~~~~~ALGORITMA~~~~~~~~
 
-STORE 'massa' to = 60
-STORE 'percepatan' to = 2
+STORE 'massa' to 60
+STORE 'percepatan' to 2
 CALCULATE 'massa' times 'percepatan'
 SET 'resultan' value with calculation result
 DISPLAY 'resultan'
@@ -62,19 +62,22 @@ Bantulah Foxie untuk menghitung jumlah pakaian yang akan dimasukkan ke mesin cuc
 
 ~~~ALGORITMA~~~~~
 
-Siapkan 20 'pakaian' yang akan dicuci
-Lalu siapkan 'mesin cuci'
-Jika 'mesin cuci' < 20
-  Masukkan 'pakaian' hingga berisi 20
-Nyalakan "MESIN CUCI" (SELESAI)
+Simpan 20 'pakaian' yang akan dicuci
+Siapkan 'mesin cuci' dengan nilai 0 pada dalam mesin
+Selama 'mesin cuci' kurang dari jumlah 'pakaian'
+  Masukkan pakaian ke dalam 'mesin cuci' satu persatu
+  Di dalam 'mesin cuci' bertambah 1
+Lalu mesin cuci siap dinyalakan
+Nyalakan mesin cuci (SELESAI)
 
 ~~~PSEUDOCODE~~~~
 
-STORE 'Pakaian' to 20
+STORE 'pakaian' to 20
 STORE 'mesinCuci' to 0
-WHILE 'mesinCuci' less than 'Pakaian'
+WHILE 'mesinCuci' less than 'pakaian'
   ADD 'mesinCuci' by 1
-DO "MESIN CUCI ON"
+DISPLAY "Mesin cuci is READY"
+DO "MESIN CUCI"
 
 4. Periksa Kuku
 
@@ -84,20 +87,22 @@ Buatlah algoritma & pseudocode untuk permasalahan diatas.
 
 ~~~~~~~~ALGORITMA~~~~~~~~
 
-1.Guru menyiapkan 'penggaris besi'
-2.Guru berkeliling 1 kelas, mengecek satu persatu 'murid'
-3.Cek 'murid' hingga 40
-4.Jika 'murid' kukunya panjang, gunakan 'penggaris besi'
-5.Jika 'murid' kukunya pendek, bilang "kamu ganteng/cantik"
-6.Cek 'murid' sudah 40, SELESAI
+Guru bersiap2 dengan penggaris besinya
+Guru berkeliling 1 kelas, mengecek satu persatu murid
+Selama 'murid' berjumlah 40 dalam kelas, guru akan memeriksa sampai semua 'murid' habis
+  Jika 'murid.kuku' panjang, guru akan mengukum
+  Jika 'murid.kuku' pendek, guru akan memuji dengan mengatakan "kamu ganteng/cantik"
+  Saat satu diperiksa, 'murid' berkurang 1
+Guru sudah selesai memeriksa murid.
 
 ~~~~~~~~PSEUDOCODE~~~~~~~~~~~
 
 STORE 'murid' to 40
 STORE 'hitung' to 0
-WHILE 'hitung' < 'murid'
+WHILE 'hitung' less than 'murid'
   DO "CEK KUKU"
-  IF 'kukumurid' = "panjang"
+  IF 'murid.kuku' is "panjang"
     DO "HUKUM"
   ELSE 'kuku' DO "PUJI"
   ADD 'hitung' by 1
+DISPLAY "Kelas selesai diperiksa"
