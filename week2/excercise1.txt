@@ -13,7 +13,7 @@ m = massa benda (kg)
 
 a = percepatan benda (m/s2)
 
-~~~~~~PSEUDO~~~~~~~~
+~~~~~~ALGORITMA~~~~~~~~
 
 STORE 'massa' to = 60
 STORE 'percepatan' to = 2
@@ -62,16 +62,17 @@ Bantulah Foxie untuk menghitung jumlah pakaian yang akan dimasukkan ke mesin cuc
 
 ~~~ALGORITMA~~~~~
 
-Masukkan 'pakaian' dengan jumlah 20 yang akan dicuci
-  Selama 'mesin cuci' kurang dari banyak 'pakaian'
-    Tambah 'mesin cuci' sebanyak 1
-  Jika sudah nyalakan 'mesin cuci'
+Siapkan 20 'pakaian' yang akan dicuci
+Lalu siapkan 'mesin cuci'
+Jika 'mesin cuci' < 20
+  Masukkan 'pakaian' hingga berisi 20
+Nyalakan "MESIN CUCI" (SELESAI)
 
 ~~~PSEUDOCODE~~~~
 
 STORE 'Pakaian' to 20
 STORE 'mesinCuci' to 0
-WHILE 'mesinCuci' < 'Pakaian'
+WHILE 'mesinCuci' less than 'Pakaian'
   ADD 'mesinCuci' by 1
 DO "MESIN CUCI ON"
 
@@ -84,19 +85,19 @@ Buatlah algoritma & pseudocode untuk permasalahan diatas.
 ~~~~~~~~ALGORITMA~~~~~~~~
 
 1.Guru menyiapkan 'penggaris besi'
-2.Kelas berisi jumlah 'murid' sebanyak 40
-3.Guru akan 'cek' satu per-satu dengan diawali nilai 0
-4.Selama 'cek' kurang dari jumlah 'murid'
-5.Jika 'murid.kuku' kukunya panjang, gunakan 'penggaris besi'
-6.Jika 'murid.kuku' kukunya pendek, bilang "kamu ganteng/cantik"
-7.Tambah 'cek' sebanyak 1. Jika 'cek' sudah 40, SELESAI
+2.Guru berkeliling 1 kelas, mengecek satu persatu 'murid'
+3.Cek 'murid' hingga 40
+4.Jika 'murid' kukunya panjang, gunakan 'penggaris besi'
+5.Jika 'murid' kukunya pendek, bilang "kamu ganteng/cantik"
+6.Cek 'murid' sudah 40, SELESAI
 
 ~~~~~~~~PSEUDOCODE~~~~~~~~~~~
 
 STORE 'murid' to 40
 STORE 'hitung' to 0
 WHILE 'hitung' < 'murid'
+  DO "CEK KUKU"
   IF 'kukumurid' = "panjang"
     DO "HUKUM"
-  ELSE DO "PUJI"
+  ELSE 'kuku' DO "PUJI"
   ADD 'hitung' by 1
