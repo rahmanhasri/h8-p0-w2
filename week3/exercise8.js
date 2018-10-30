@@ -1,6 +1,6 @@
 function pasanganTerbesar(num) {
   // you can only write your code here!
-  num = num + '';
+  num = String(num);
   let tampung = 0;
   for (i=0;i<=num.length-2;i++){
     if (tampung < num[i] + num[i+1])

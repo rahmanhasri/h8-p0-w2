@@ -1,5 +1,10 @@
 function cariMean(arr) {
   // you can only write your code here!
+  var jumlah = 0;
+  for (i=0; i<arr.length; i++){
+    jumlah += arr[i]
+  }
+  return Math.round(jumlah/arr.length)
 }
 
 // TEST CASES
