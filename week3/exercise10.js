@@ -1,15 +1,26 @@
+// function perkalianUnik(arr) {
+//   var newArr = [];
+//   for (i=0;i<arr.length;i++){
+//     var total = 1;
+//     var tampung = arr[i];
+//     arr[i] = arr[i] ** 0;
+//     for (j=0;j<arr.length;j++){
+//       total = total * arr[j]
+//     }
+//     newArr.push(total)
+//     arr[i] = tampung;
+//   }
+//   return newArr
+// }
+
 function perkalianUnik(arr) {
-  // you can only write your code here!
   var newArr = [];
   for (i=0;i<arr.length;i++){
-    var total = 1;
-    var tampung = arr[i];
-    arr[i] = arr[i] ** 0;
+    var result = 1;
     for (j=0;j<arr.length;j++){
-      total = total * arr[j]
+      result = result * arr[j]
     }
-    newArr.push(total)
-    arr[i] = tampung;
+    newArr.push(result/arr[i])
   }
   return newArr
 }

@@ -11,13 +11,14 @@ function angkaPalindrome(num) {
   // you can only write your code here!
   while (true) {
     num++
-    var rivers = '';
-    var string = num + '';
-    for (i = string.length-1; i>=0; i--) {
-      rivers += string[i]
-    } if (rivers == num){
-      return num
+    var string = ''; // mereset string kosong
+    var balik = String(num); // mendekalarasikan variable yang merubah num++ agar menjadi string sehingga bisa di reverse
+    for (i = balik.length - 1; i >= 0; i--) { // perulangan untuk mereverse tiap char
+      string += balik[i] //
     }
+    if (string == num) { // check saat string yg sudah direverse sama dengan num
+      return num
+    } // mengulang while lagi saat belum sama
   }
 }
 
