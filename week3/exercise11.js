@@ -1,7 +1,8 @@
 function tentukanDeretAritmatika(arr) {
   // you can only write your code here!
   var selisih = arr[1] - arr[0];
-  for(i=0; i<arr.length-2; i++){
+  for(i=1; i<arr.length-1; i++){
+    console.log(i)
     if (selisih !== Math.abs(arr[i]-arr[i+1])){
       return false
     }

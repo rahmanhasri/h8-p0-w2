@@ -1,7 +1,14 @@
-1. Buat array u/ menampung x dan o yang ada array inpyt
-2. Buat array u/ menampung count index x dan o berdasarkan array no.1
-3. Buat array u/ count selisih x dan o berdasarkan perbedaan array char x --> o
-4. Buat perulang u/ menginput x atau o pada array no.1 dan menginput index pada array.no 2
-5. Buat perulangan u/ menghitung selisih x, o
-6. Buat sort u/ array no. 3 agar menampilkan count terkecil paling kiri
-7. Jika count selisih adalah undefined maka return 0 jika tidak return selisih paling kecil
+Deklarasi array character u/ menampung x dan o yang ada aray input
+Deklarasi array count u/ menampung index x dan o berdasar array no. 1
+Deklarasi array count2 u/ menhitung selish x dan o berdasarkan perbedaan x bertemu o
+Buat looping i mulai dari 0 sampai kurang dari arr.length
+  Jika arr index ke i sama dengan x OR o
+    Menginput push arr index ke i ke array character
+    Menginput push index ke i ke array count
+Buat looping j mulai dari 0 sampai kurang dari count.length minus 1
+  Jika array character index ke j Bukan sama dengan character index ke j plus 1
+    Menginput push array count j+1 dikurang count j
+Sorting array count2
+  Jika Boolean dari count2 sama dengan undefined
+    Maka return 0
+  Jika bukan, return array count2[0] yang sudah disort paling kecil

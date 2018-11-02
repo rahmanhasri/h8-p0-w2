@@ -3,7 +3,7 @@ function jarakTempuh(str, n) {
   while (n >= 0) {
     target += 'n'
     n--
-  }
+
   //console.log(cari) // nn // n // nnnnn
   for (var i=0;i<str.length;i++){
     for(var j = 0; j<target.length;j++){

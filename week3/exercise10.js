@@ -18,9 +18,11 @@ function perkalianUnik(arr) {
   for (i=0;i<arr.length;i++){
     var result = 1;
     for (j=0;j<arr.length;j++){
-      result = result * arr[j]
+      if (i === j){
+        // do nothing
+      } else result = result * arr[j];
     }
-    newArr.push(result/arr[i])
+    newArr.push(result)
   }
   return newArr
 }

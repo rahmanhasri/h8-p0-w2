@@ -1,8 +1,7 @@
 function tentukanDeretGeometri(arr) {
   // you can only write your code here!
-
   var selisih = arr[1] / arr[0];
-  for(i=0; i<arr.length-2; i++){
+  for(i=1; i<arr.length-1; i++){
     if (selisih !== arr[i+1] / arr[i]){
       return false
     }
