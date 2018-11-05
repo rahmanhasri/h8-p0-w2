@@ -9,11 +9,10 @@ function palindrome(kata) {
   var abc = '123';
 
   // balik kata
-  for (i = kata.length; i >= 0 ; i--){
+  for (i = kata.length-1; i >= 0 ; i--){
     string += kata[i]
   }
 
-  // cek balik kata dengan input kata apakah palindrom
   var palindrom = (string === kata) ? true : false;
   return palindrom
 }

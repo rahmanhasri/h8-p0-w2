@@ -18,7 +18,7 @@ function targetTerdekat(arr) {
       jarak = tmp;
     }
   }
-  if (jarak === arr.length){ // Jika jarak masih sama saat deklarasi assign jarak maksimal
+  if (xIndex.length == 0){ // Jika jarak masih sama saat deklarasi assign jarak maksimal
     return 0 // maka return 0
   } else return jarak // jika Bukan, maka return nilai jarak
 
@@ -32,25 +32,19 @@ console.log(targetTerdekat([' ', ' ', 'o', ' '])); // 0
 console.log(targetTerdekat([' ', 'o', ' ', 'x', 'x', ' ', ' ', 'x'])); // 2
 
 // function targetTerdekat(arr) {
-//   var char = [];
-//   var count = [];
-//   var count2 = [];
-//
-//   for (i = 0; i < arr.length; i++) {
-//     if (arr[i] === 'x' || arr[i] === 'o') {
-//       char.push(arr[i]);
-//       count.push(i)
-//     }
-//   }
-//
-//   for (j=0;j<count.length-1; j++){
-//     if (char[j] !== char[j+1]){
-//       count2.push(count[j+1] - count[j])
-//     }
-//   }
-//
-//   count2.sort();
-//   if (Boolean(count2) === undefined) {
+//   // you can only write your code here!
+//   var indexO = arr.indexOf("o")
+//   var jarakTerdekat = arr.length
+//   if (arr.indexOf("x") === -1) {
 //     return 0
-//   } else return count2[0];
+//   }
+//   for (var i = 0; i < arr.length; i++) {
+//     if (arr[i] === "x") {
+//       let jarak = Math.abs(i - indexO)
+//       if (jarak < jarakTerdekat) {
+//         jarakTerdekat = jarak
+//       }
+//     }
+//   }
+//   return jarakTerdekat
 // }
