@@ -5,7 +5,6 @@ function changeMe(arr) {
     console.log(arr)
   } else {
     for (let i = 0; i<arr.length;i++){
-      var output = {}
       var obj = {}
       obj.firstName = arr[i][0]
       obj.lastName = arr[i][1]
