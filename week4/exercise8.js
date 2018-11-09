@@ -1,28 +1,3 @@
-// function tukarBesarKecil(kalimat) {
-//   // you can only write your code here!
-//   let strKecil = 'abcdefghijklmnopqrstuvwxyz'
-//   let strBesar = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
-//   let string = ''
-//
-//   for (let i = 0; i < kalimat.length; i++) {
-//     if (kalimat[i] === ' ' || kalimat[i] < 10 || kalimat[i] === '!' || kalimat[i] === '?' || kalimat[i] === '-') {
-//       string += kalimat[i]
-//     } else {
-//       for (let j = 0; j < 26; j++) {
-//         // console.log(kalimat[0]);
-//         // console.log(strBesar[7]);
-//         if (kalimat[i] == strBesar[j]) {
-//           string += strKecil[j]
-//         }
-//         if (kalimat[i] == strKecil[j]) {
-//           string += strBesar[j]
-//         }
-//       }
-//     }
-//   }
-//   return string
-// }
-
 function tukarBesarKecil(kalimat){
   let string = ''
   for (let i = 0; i<kalimat.length; i++){

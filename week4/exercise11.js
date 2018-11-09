@@ -30,6 +30,14 @@ listPurchased: [ 'Baju Zoro', 'Sweater Uniklooh' ], changeMoney:25000 }
 
 function shoppingTime(memberId, money) {
   // you can only write your code here!
+  var product = {
+  'Sepatu Stacattu' : 1500000,
+  'Baju Zoro' : 500000,
+  'Baju H&N' : 250000,
+  'Sweater Uniklooh' : 175000,
+  'Casing Handphone' : 50000,
+  }
+  // console.log(Object.keys(product))
   if (memberId === '' || memberId === undefined) {
     return 'Mohon maaf, toko X hanya berlaku untuk member saja'
   } else if (money < 50000) {
@@ -38,36 +46,19 @@ function shoppingTime(memberId, money) {
     var obj = {};
     obj.memberId = memberId;
     obj.money = money;
-    var array = [];
+    var list = [];
     // console.log(money);
-    if (money > 1500000) {
-      array.push('Sepatu Stacattu');
-      money = money - 1500000;
+    for (key in product){
+      if (money >= product[key]){
+        money -= product[key];
+        list.push(key)
+      }
     }
-    if (money >= 500000) {
-      array.push('Baju Zoro');
-      money = money - 500000;
-    }
-    if (money >= 250000) {
-      array.push('Baju H&N');
-      money = money - 250000;
-    }
-    if (money >= 175000) {
-      array.push('Sweater Uniklooh');
-      money = money - 175000;
-    }
-    if (money >= 50000) {
-      array.push('Casing Handphone');
-      money = money - 50000;
-    }
-    obj.listPurchased = array;
-    obj.changeMoney = money;
-    return obj
-  }
-  // console.log(money);
-  // console.log(array);
+    obj.listPurchased = list
+    obj.changeMoney = money
 }
-
+return obj
+}
 // TEST CASES
 console.log(shoppingTime('1820RzKrnWn08', 2475000));
 //{ memberId: '1820RzKrnWn08',

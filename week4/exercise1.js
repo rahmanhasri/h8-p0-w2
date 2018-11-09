@@ -1,14 +1,12 @@
 function angkaPrima(angka) {
   // you can only write your code here!
-  var i = 1; //index mulai modulus
-  while (i<=angka){
-    i++;
-    if (angka % i === 0 && i === angka){
-      return true
-    } else if (angka % i === 0 && i !== angka){
-      return false
+  let prima = 0
+  for (let i = 1; i<=angka; i++){
+    if (angka % i === 0){
+      prima++
     }
   }
+  return prima === 2
 }
 
 // TEST CASES
