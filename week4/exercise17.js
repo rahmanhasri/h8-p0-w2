@@ -12,14 +12,14 @@ function kaliTerusRekursif(angka) {
 }
 
 // function kaliTerusRekursif(angka) {
-//   var str = String(angka)
+//   var strNum = String(angka)
 //   var hasil = 1
-//   for (let i = 0; i < str.length; i++) {
-//     hasil *= str[i]
-//   }
-//   if (String(hasil).length === 1) {
-//     return hasil
+//   if (angka < 10) {
+//     return angka
 //   } else {
+//     for (let i = 0; i < strNum.length; i++) {
+//     hasil *= strNum[i]
+//   }
 //     return kaliTerusRekursif(hasil)
 //   }
 // }
