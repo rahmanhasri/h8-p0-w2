@@ -27,7 +27,7 @@ function sumThree(params) {
   for (let i = 0 ; i<params.length ; i++){
     for (let j = 0; j<params[i].length ; j++){
       if (params[i][j] > 99 && params[i][j] < 1000){
-        total += params[i][j]
+        total += Number(params[i][j])
       }
     }
   }
