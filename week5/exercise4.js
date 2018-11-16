@@ -1,3 +1,4 @@
+
 // Implementasikan function graduates untuk mendapatkan daftar student yang lulus dengan aturan:
 // Student dapat dinyatakan lulus apabila score lebih besar dari 75.
 // Masukkan name dan score dari student ke class yang dia ikuti.
