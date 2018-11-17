@@ -17,20 +17,16 @@ function countProfit(shoppers) {
       obj['leftOver'] = listBarang[i][2];
       obj['totalProfit'] = 0;
       // looping u/ belanjaan shoppers
-      output.push(obj)
-    }
-
-    for (let j = 0; j < shoppers.length; j++) {
-      for (let k = 0; k < output.length; k++) {
-        if (shoppers[j]['product'] === output[k]['product'] && output[k]['leftOver'] >= shoppers[j]['amount']) {
-          output[k]['shoppers'].push(shoppers[j]['name']);
-          output[k]['leftOver'] -= shoppers[j]['amount'];
-          output[k]['totalProfit'] += shoppers[j]['amount'] * listBarang[k][1];
+      for(let j = 0 ; j < shoppers.length ; j++){
+        if (obj['product'] === shoppers[j]['product'] && obj['leftOver'] >= shoppers[j].amount){
+          obj.shoppers.push(shoppers[j].name)
+          obj.leftOver -= shoppers[j].amount
+          obj.totalProfit += shoppers[j].amount * listBarang[i][1]
         }
       }
-      console.log(shoppers);
+      output.push(obj)
     }
-    console.log(output);
+    return output
   }
 }
 // TEST CASES
