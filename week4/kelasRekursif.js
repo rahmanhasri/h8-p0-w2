@@ -1,7 +1,7 @@
 function rekursif1(num) {
   if (num === 1) { // the base of recursion,
     return num
-  } else return num * rekursif1(num - 1)
+  } else return num * rekursif1(num - 1) // the recursive step
 }
 
 // console.log(rekursif1(5))

@@ -12,8 +12,7 @@ function ubahHuruf(kata) {
     }
   }
   for (let k = 0; k<key.length ; k++){
-    let tmp = key[k]
-    newKata += alfabet[tmp]
+    newKata += alfabet[key[k]]
   }
   return newKata
 }

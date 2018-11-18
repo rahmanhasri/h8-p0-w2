@@ -1,6 +1,7 @@
+// Jika algoritmanya setiap attack dilakukan akan berkurang 2 dan seterusnya
 // function attack (damage) {
 //   // Code disini
-//   return (damage <= 0 )
+//   return (damage - 2 <= 0) ? 0 : damage - 2
 // }
 //
 // function damageCalculation (numberOfAttacks, damagePerAttack) {

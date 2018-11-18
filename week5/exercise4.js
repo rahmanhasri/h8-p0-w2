@@ -17,11 +17,11 @@ function graduates(students) {
         obj.score = students[i].score
       }
     } else {
-      if (output.hasOwnProperty(students[i].class)) {
+      // if (output.hasOwnProperty(students[i].class)) {
         if (students[i].score > 75) {
           obj.name = students[i].name
           obj.score = students[i].score
-        }
+        // }
       }
     }
     // console.log(Object.hasOwnProperty(students[i].class))

@@ -33,21 +33,22 @@ console.log(cariModus([7, 7, 7, 7, 7])); // -1
 console.log(cariModus([1, 1, 1, 3, 3, 1])) // 1
 
 function cariModus(arr) {
-  let modus;
-  let array = [];
-  let max = 0;
-  for (let i = 0; i < arr.length; i++) {
-    if (array[arr[i]] === undefined) {
-      array[arr[i]] = 1
+  let modus; // deklarasi var modus
+  let array = []; // deklarasi array indeks untuk pengecekan angka sesuai indeks
+  // [3 empty items, 1 (pada nilai 4), 1 (pada nilai 5), dst]
+  let max = 0; // deklarasi var yg kuantitasnya paling banyak (modus)
+  for (let i = 0; i < arr.length; i++) { // pengulangan
+    if (array[arr[i]] === undefined) { // saat array pada indeks sesuai nilai belum terdefinisi
+      array[arr[i]] = 1 // maka akan menambahkan nilai 1
     } else {
-      array[arr[i]] += 1
+      array[arr[i]] += 1 // jika sudah terdefinisi maka menambahkan nilai +1 (kuantitasnya)
     }
-    if (array[arr[i]] >= max) {
+    if (array[arr[i]] >= max) { // mengassign saat ada kuantitas yg lebih dari maxnya
       max = array[arr[i]]
-      modus = arr[i]
+      modus = arr[i] // mengassign baru saat ada nilai baru yg maxnya lebih banyak
     }
-  }
-  if (max === 1 || max === arr.length) {
-    return -1
-  } else return modus
+  } // selesai pengulangan
+  if (max === 1 || max === arr.length) { // saat max memiliki nilai 1 atau max memiliki nilai sebanyak panjang arranya
+    return -1 // maka modus tidak ditemukan
+  } else return modus // jika tidak maka akan mereturn modus
 }

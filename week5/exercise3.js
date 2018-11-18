@@ -1,22 +1,20 @@
 function highestScore (students) {
   // Code disini
-  var output = {}
-  var hiscore = {}
-  for (let i = 0; i<students.length; i++){
-    if (output['class'] === undefined){
-      output[students[i]['class']] = {}
-      output[students[i]['class']]['name'] = ''
-      output[students[i]['class']]['score'] = 0
+  let output = {}
+  for (let i = 0 ; i < students.length ; i++){
+    if (output[students[i].class] === undefined){
+      var obj = {}
+      obj = {
+        name : students[i].name,
+        score : students[i].score,
+      }
+      output[students[i].class] = obj
+    } else if (output[students[i].class].score < students[i].score) {
+      output[students[i].class].name = students[i].name
+      output[students[i].class].score = students[i].score
     }
-    if (hiscore[i])
-    let kelas = output;
-    let kelasM = students[i]['class']
-    // for (let j = 0; j<output)
-    // if ( output === students[i]['class']  && kelas['score'] < students[i]['score'] ){
-    //   console.log(masuk);
-    // }
-    console.log(kelas ,kelasM);
   }
+  return output
 }
 
 // TEST CASE

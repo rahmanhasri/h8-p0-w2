@@ -29,7 +29,7 @@ function getTotal(arrNumber) {
         max = arrNumber[i]
       }
     }
-    console.log(obj);
+    // console.log(obj);
     return `angka paling besar adalah ${max} dan jumlah kemunculan sebanyak ${obj[max]} kali`
   }
 }
